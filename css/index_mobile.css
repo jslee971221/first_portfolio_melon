@@ -75,12 +75,11 @@ div.mainWrap>div.main>div.mainM>div.mMid{
 }
 div.mainWrap>div.main>div.mainM>div.mBtm{
   width: calc((100% / 4 * 1.8) * 3);
-  float: right;
   height: 160px;
+  float: right;
 }
 div.mainWrap>div.main>div.mainM>div.mBtm>div.texts{
   width: calc(100% / 3);
-  
 }
 
 
@@ -212,6 +211,7 @@ div.cntWrap>div.content.cnt02>div.section>div.article:hover::before{
 }
 div.cntWrap>div.content.cnt04>div.section{
   height: 250px;
+  overflow: hidden;
 }
 div.cntWrap>div.content.cnt04>div.section>div.artView{
   width: 100%;
@@ -220,12 +220,10 @@ div.cntWrap>div.content.cnt04>div.section>div.artView{
 
 
 div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup{
-  width: 300%;
+  width: 600%;
 }
 div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article{
-  width: calc(100% / 3 - 20px);
-  margin: 0 10px;
- 
+  width: calc(100% / 6);
 }
 
 div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.texts::after{
