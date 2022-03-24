@@ -11,32 +11,7 @@
   <link rel="stylesheet" href="./css/chart_tablet.css" media="(max-width:1024px) and (min-width:0px)">
   <link rel="stylesheet" href="./css/chart_mobile.css" media="(max-width:420px) and (min-width:0px)">
   <script src="./js/jquery-3.6.0.min.js"></script>
-  <script>
-    $(function(){
-      $('.btn .xi-heart-o').click(function(){
-        var className = $(this).attr('class');
-        if(className == 'xi-heart-o'){
-          $(this).removeClass('xi-heart-o');
-          $(this).addClass('xi-heart');
-        }else{
-          $(this).removeClass('xi-heart');
-          $(this).addClass('xi-heart-o');
-        }        
-      }); 
-    $('.xi-close-square-o').click(function(){
-      $('.playerWrap').css('display', 'none');
-    });
-   
-    $('.xi-play').click(function(){
-      $('.playerWrap').css('display', 'block');
-    });
-    $('.xi-play-circle-o').click(function(){
-      $('.playerWrap').css('display', 'block');
-    });
-    
-  });
-
-  </script>
+  <script src="./js/chart.js"></script>
 </head>
 <div>
   <!-- 헤더 -->
