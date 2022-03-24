@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chart</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/xeicon.min.css">
+  <link rel="stylesheet" href="./css/chart.css">
+  <link rel="stylesheet" href="./css/chart_tablet.css" media="(max-width:1024px) and (min-width:0px)">
+  <link rel="stylesheet" href="./css/chart_mobile.css" media="(max-width:420px) and (min-width:0px)">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function(){
+      $('.btn .xi-heart-o').click(function(){
+        var className = $(this).attr('class');
+        if(className == 'xi-heart-o'){
+          $(this).removeClass('xi-heart-o');
+          $(this).addClass('xi-heart');
+        }else{
+          $(this).removeClass('xi-heart');
+          $(this).addClass('xi-heart-o');
+        }        
+      }); 
+    $('.xi-close-square-o').click(function(){
+      $('.playerWrap').css('display', 'none');
+    });
+   
+    $('.xi-play').click(function(){
+      $('.playerWrap').css('display', 'block');
+    });
+    $('.xi-play-circle-o').click(function(){
+      $('.playerWrap').css('display', 'block');
+    });
+    
+  });
+
+  </script>
+</head>
+<div>
+  <!-- 헤더 -->
+  <div class="hdrWrap">
+    <div class="header">
+      <div class="hdrLeft">
+        <h1><a href="./index.html">melon</a></h1>
+        <ul class="member">
+          <li>login</li>
+          <li>join</li>
+        </ul>
+      </div>
+      <div class="hdrRight">
+        <ul class="nav">
+          <li><a href="./new.html">new</a></li>
+          <li><a href="./chart.html">chart</a></li>
+          <li><a href="./video.html">video</a></li>
+        </ul>
+        <div class="search">
+          <i class="xi-search"></i>
+          <label for="chk"><i class="xi-bars"></i></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <input type="checkbox" id="chk">
+  <!-- 네비박스 -->
+  <div class="navBoxWrap">
+    <div class="navBox">
+      <ul class="nav">
+        <li><a href="./new.html">new</a></li>
+        <li><a href="./chart.html">chart</a></li>
+        <li><a href="./video.html">video</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 플레이어 -->
+  <div class="playerWrap">
+    <div class="player">
+      <div class="btn">
+        <i class="xi-close-square-o"></i>
+      </div>
+      <div class="image"></div>
+      <div class="texts">
+        <h3>취중고백 - 김민석 (멜로망스)</h3>
+        <div class="btns">
+          <i class="xi-backward"></i>
+          <i class="xi-pause"></i>
+          <i class="xi-forward"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 배너 -->
+  <div class="bnrWrap">
+    <div class="banner">
+      <div class="image"></div>
+      <div class="btns">
+        <i class="xi-angle-left"></i>
+        <i class="xi-angle-right"></i>
+      </div>
+      <div class="texts">
+        <h2>취중고백 - 김민석 (멜로망스)</h2>
+        <h5>싱글 [취중고백]</h5>
+        <div class="btn">
+          <i class="xi-play"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 컨텐츠1 -->
+  <div class="cntWrap">
+    <div class="content">
+      <div class="header">
+        <h2>top 200 차트</h2>
+      </div>
+      <div class="section">
+        <div class="artLeft">
+          <div class="article">
+            <div class="image i1"></div>
+            <div class="texts">
+              <h3>취중고백 - 김민석 (멜로망스)</h3>
+              <div class="btn">
+                <i class="xi-heart-o"></i>
+                <i class="xi-play-circle-o"></i>
+                <i class="xi-plus-square-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i2"></div>
+            <div class="texts">
+              <h3>사랑은 늘 도망가 - 임영웅</h3>
+              <div class="btn">
+                <i class="xi-heart-o"></i>
+                <i class="xi-play-circle-o"></i>
+                <i class="xi-plus-square-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i3"></div>
+            <div class="texts">
+              <h3>Step Back - GOT the beat</h3>
+              <div class="btn">
+                <i class="xi-heart-o"></i>
+                <i class="xi-play-circle-o"></i>
+                <i class="xi-plus-square-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i4"></div>
+            <div class="texts">
+              <h3>호랑수월가 - 탑현</h3>
+              <div class="btn">
+                <i class="xi-heart-o"></i>
+                <i class="xi-play-circle-o"></i>
+                <i class="xi-plus-square-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i5"></div>
+            <div class="texts">
+              <h3>회전목마 (Feat. Zion.T, 원슈타인 (Prod. Slom)) - sokodomo</h3>
+              <div class="btn">
+                <i class="xi-heart-o"></i>
+                <i class="xi-play-circle-o"></i>
+                <i class="xi-plus-square-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i6"></div>
+            <div class="texts">
+              <h3>ELEVEN - IVE (아이브)</h3>
+              <div class="btn">
+                <i class="xi-heart-o"></i>
+                <i class="xi-play-circle-o"></i>
+                <i class="xi-plus-square-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i7"></div>
+            <div class="texts">
+              <h3>리무진 (Feat. MINO) - BE'O (비오)</h3>
+              <div class="btn">
+                <i class="xi-heart-o"></i>
+                <i class="xi-play-circle-o"></i>
+                <i class="xi-plus-square-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i8"></div>
+            <div class="texts">
+              <h3>Counting Stars (Feat. Beenzino) - BE'O (비오)</h3>
+              <div class="btn">
+                <i class="xi-heart-o"></i>
+                <i class="xi-play-circle-o"></i>
+                <i class="xi-plus-square-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i9"></div>
+            <div class="texts">
+              <h3>Dreams Come True - aespa</h3>
+              <div class="btn">
+                <i class="xi-heart-o"></i>
+                <i class="xi-play-circle-o"></i>
+                <i class="xi-plus-square-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="image i10"></div>
+            <div class="texts">
+              <h3>눈이 오잖아 (Feat. 헤이즈) - 이무진</h3>
+              <div class="btn">
+                <i class="xi-heart-o"></i>
+                <i class="xi-play-circle-o"></i>
+                <i class="xi-plus-square-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="btn">TOP 차트 모두 보기</div>
+        </div>
+        <div class="artRight">
+          <div class="article art1">
+            <div class="image"></div>
+            <div class="texts">
+              <h3>장르별 차트</h3>
+            </div>
+          </div>
+          <div class="article genre">
+            <div class="image i1"></div>
+            <div class="texts">
+              <h3>K-POP</h3>
+            </div>
+          </div>
+          <div class="article genre">
+            <div class="image i2"></div>
+            <div class="texts">
+              <h3>POP</h3>
+            </div>
+          </div>
+          <div class="article genre">
+            <div class="image i3"></div>
+            <div class="texts">
+              <h3>DANCE</h3>
+            </div>
+          </div>
+          <div class="article genre">
+            <div class="image i4"></div>
+            <div class="texts">
+              <h3>HIP-HOP</h3>
+            </div>
+          </div>
+          <div class="article genre">
+            <div class="image i5"></div>
+            <div class="texts">
+              <h3>ROCK</h3>
+            </div>
+          </div>
+          <div class="article genre">
+            <div class="image i6"></div>
+            <div class="texts">
+              <h3>JAZZ</h3>
+            </div>
+          </div>
+          <div class="article genre">
+            <div class="image i7"></div>
+            <div class="texts">
+              <h3>CLASSIC</h3>
+            </div>
+          </div>
+          <div class="article genre">
+            <div class="image i8"></div>
+            <div class="texts">
+              <h3>R&B</h3>
+            </div>
+          </div>
+          <div class="article genre">
+            <div class="image i9"></div>
+            <div class="texts">
+              <h3>FOLK</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 푸터 -->
+  <div class="ftrWrap">
+    <div class="footer">
+      <h1>melon</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores eligendi commodi, similique numquam repudiandae? Consequuntur, quibusdam, debitis sint nobis vel accusantium velit, animi a quidem laboriosam cumque ducimus sit.</p>
+      <div class="sns">
+        <i class="xi-facebook"></i>
+        <i class="xi-instagram"></i>
+        <i class="xi-twitter"></i>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,361 @@
+
+.btn, .btns{
+  cursor: pointer;
+}
+/* 헤더 */
+div.hdrWrap{
+  background-color: #41734d;
+  color: #fff;
+}
+div.hdrWrap>div.header{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  line-height: 80px;
+}
+div.hdrWrap>div.header::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.hdrWrap>div.header>div.hdrLeft{
+  width: calc(100% / 12 * 3);
+  float: left;
+}
+div.hdrWrap>div.header>div.hdrLeft>h1{
+  float: left;
+  width: calc(100% / 3);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+div.hdrWrap>div.header>div.hdrLeft>ul.member{
+  float: left;
+  margin-left: 20px;
+}
+div.hdrWrap>div.header>div.hdrLeft>ul.member>li{
+  float: left;
+  margin-left: 20px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+div.hdrWrap>div.header>div.hdrRight{
+  width: calc(100% / 12 * 4);
+  float: right;
+}
+div.hdrWrap>div.header>div.hdrRight>ul.nav{
+  width: calc(100% / 4 * 3);
+  float: left;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+div.hdrWrap>div.header>div.hdrRight>ul.nav>li{
+  float: left;
+  text-decoration: underline;
+  margin-left: 20px;
+
+}
+div.hdrWrap>div.header>div.hdrRight>div.search{
+  width: calc(100% / 4);
+  float: right
+}
+div.hdrWrap>div.header>div.hdrRight>div.search>i{
+  font-size: 25px;
+}
+div.hdrWrap>div.header>div.hdrRight>div.search i.xi-bars{
+  display: none;
+}
+
+input#chk{
+  display: none;
+}
+input#chk:checked+div.navBoxWrap{
+  height: 40px;
+}
+
+/* 네비박스 */
+div.navBoxWrap{
+  background-color: #eee29b;
+  color: #41734d;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+div.navBoxWrap>div.navBox{
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+div.navBoxWrap>div.navBox::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.navBoxWrap>div.navBox>ul.nav{
+  float: right;
+}
+div.navBoxWrap>div.navBox>ul.nav>li{
+  float: left;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+
+
+/* 컨텐츠 */
+div.cntWrap{
+  margin-top: 160px;
+}
+div.cntWrap>div.content{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+div.cntWrap>div.content>div.header>h2{
+  font-size: 25px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* 컨텐츠1 */
+div.cntWrap>div.content.cnt01>div.header{
+  margin-left: calc(100% / 12);
+}
+div.cntWrap>div.content.cnt01>div.section{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artGroup{
+  width: 300%;
+  margin-top: 20px;
+  transition: all 0.5s;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artGroup::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artGroup>div.article{
+  width: calc(100% / 3);
+  float: left;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artGroup>div.article>div.image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 520px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artGroup>div.article:nth-child(1)>div.image{
+  background-image: url('../images/takemybreath_thumb.jpg');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artGroup>div.article:nth-child(2)>div.image{
+  background-image: url('../images/staythumb.jpg');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artGroup>div.article:nth-child(3)>div.image{
+  background-image: url('../images/butterthumb.jpg');
+}
+div.cntWrap>div.content.cnt01>div.section>div.btn{
+  width: calc(100% / 10 * 2);
+  text-align: center;
+  font-size: 150px;
+  opacity: 0.5;
+  color: #41734d;
+  height: 150px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+div.cntWrap>div.content.cnt01>div.section>div.btns{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+div.cntWrap>div.content.cnt01>div.section>div.btns>div{
+  font-size: 40px;
+  width: calc(100% / 12);
+  line-height: 80px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.btns>div.left{
+  float: left;
+}
+div.cntWrap>div.content.cnt01>div.section>div.btns>div.right{
+  float: right;
+  text-align: right;
+}
+
+/* 컨텐츠2 */
+
+div.cntWrap>div.content.cnt02>div.header>h2::before{
+  content: '';
+  display: block;
+  width: calc(100% / 12 * 9);
+  height: 15px;
+  background-color: #41734d;
+
+}
+div.cntWrap>div.content.cnt02>div.header>h2{
+  text-align: center;
+  margin-top: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section{
+  position: relative;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artGroup::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artGroup>div.article{
+  width: calc(100% / 3 - 20px);
+  margin: 0 10px;
+  margin-top: 40px;
+  float: left;
+  cursor: pointer;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artGroup>div.article>div.image{
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artGroup>div.article>div.image.i1{
+  background-image: url('../images/butterthumb.jpg');
+}
+div.cntWrap>div.content.cnt02>div.section>div.artGroup>div.article>div.image.i2{
+  background-image: url('../images/staythumb.jpg');
+}
+div.cntWrap>div.content.cnt02>div.section>div.artGroup>div.article>div.image.i3{
+  background-image: url('../images/나무썸넬.PNG');
+}
+div.cntWrap>div.content.cnt02>div.section>div.artGroup>div.article>div.image.i4{
+  background-image: url('../images/abcdefu.jpg');
+}
+div.cntWrap>div.content.cnt02>div.section>div.artGroup>div.article>div.image.i5{
+  background-image: url('../images/beo.jpg');
+}
+div.cntWrap>div.content.cnt02>div.section>div.artGroup>div.article>div.image.i6{
+  background-image: url('../images/hi.jpg');
+}
+div.cntWrap>div.content.cnt02>div.section>ul.btn{
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  background-color: #e0ecdd;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+div.cntWrap>div.content.cnt02>div.section>ul.btn>li{
+  text-align: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  outline: 3px solid #666;
+  margin: 0 10px;
+  line-height: 40px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+div.cntWrap>div.content.cnt02>div.section>ul.btn>li:nth-child(1){
+  left: -40px;
+}
+div.cntWrap>div.content.cnt02>div.section>ul.btn>li:nth-child(3){
+  left: 40px;
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.onPlay{
+  width: calc(100% / 12 * 10 + 20px);
+  position: absolute;
+  margin: auto;
+  top: 160px;
+  left: 0;
+  right: 0;
+}
+div.cntWrap>div.content.cnt02>div.section>div.onPlay>div.image{
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/butterthumb.jpg');
+}
+div.cntWrap>div.content.cnt02>div.section>div.onPlay>div.btn{
+  width: 150px;
+  position: absolute;
+  font-size: 150px;
+  height: 150px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  color: #41734d;
+}
+div.cntWrap>div.content.cnt02>div.section>div.onPlay>div.close{
+  width: 50px;
+  position: absolute;
+  font-size: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  color: #41734d;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* 푸터 */
+div.ftrWrap{
+  margin-top: 160px;
+  background-color: #41734d;
+  color: #fff;
+} 
+div.ftrWrap>div.footer{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0px;
+} 
+div.ftrWrap>div.footer>h1{
+  line-height: 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+} 
+div.ftrWrap>div.footer>p{
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 20px;
+  height: 40px;
+  width: calc(100% / 12 * 4);
+  overflow: hidden;
+} 
+div.ftrWrap>div.footer>div.sns{
+  line-height: 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+} 
+div.ftrWrap>div.footer>div.sns>i{
+  line-height: 40px;
+  font-size: 25px;
+} 

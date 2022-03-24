@@ -1,0 +1,290 @@
+@keyframes bigNSmall {
+  0%{
+    font-size: 18px;
+  }
+  50%{
+    font-size: 25px;
+  }
+  100%{
+    font-size: 18px;
+  }
+}
+
+div.hdrWrap>div.header{
+  width: 90%;
+  max-width: 380px;
+  line-height: 40px;
+}
+div.hdrWrap>div.header>h1{
+  width: calc(100% / 4 - 20px);
+  font-size: 25px;
+}
+div.hdrWrap>div.header>ul.member>li{
+  font-size: 12px;
+  margin-left: 10px;
+}
+div.hdrWrap>div.header>div.search{
+  width: 50px;
+}
+div.hdrWrap>div.header>div.search>label{
+  margin-left: 0px;
+}
+div.hdrWrap>div.header>div.search>i{
+  font-size: 18px;
+  line-height: 40px;
+}
+div.hdrWrap>div.header>div.search i.xi-bars{
+  font-size: 18px;
+  line-height: 40px;
+  width: 18px;
+  margin-left: 10px;
+}
+
+div.mainWrap>div.main{
+  width: 90%;
+  max-width: 380px;
+  position: relative;
+}
+div.mainWrap>div.main>div.mainL{
+  width: calc(100% / 4 * 2.2);
+  margin-left: 0;
+  position: absolute;
+  top: 120px;
+}
+div.mainWrap>div.main>div.mainL>div.mainView{
+  width: 100%;
+  margin-left: 0px;
+}
+div.mainWrap>div.main>div.mainL>div.mainView>div.images{
+  width: 300%;
+  margin-left: 0px;
+  height: 160px;
+  overflow: hidden;
+}
+div.mainWrap>div.main>div.mainL>div.mainView>div.images>div.image{
+  width: calc(100% / 3);
+  margin-left: 0px;
+  height: 160px;
+}
+div.mainWrap>div.main>div.mainM{
+  width: 100%;
+}
+div.mainWrap>div.main>div.mainM>div.mMid{
+  width: 100%;
+  padding-top: 20px;
+}
+div.mainWrap>div.main>div.mainM>div.mBtm{
+  width: calc((100% / 4 * 1.8) * 3);
+  float: right;
+  height: 160px;
+}
+div.mainWrap>div.main>div.mainM>div.mBtm>div.texts{
+  width: calc(100% / 3);
+  
+}
+
+
+
+
+div.bnrWrap{
+  margin-top: 100px;
+}
+div.bnrWrap>div.banner{
+  width: 90%;
+  max-width: 380px;
+  height: 190px;
+  overflow: hidden;
+}
+
+div.bnrWrap>div.banner>div.images{
+  position: relative;
+}
+div.bnrWrap>div.banner>div.images>div.btn::before{
+  content: '';
+  display: block;
+  background-color: #333;
+  height: 40px;
+  width: calc(100% + 10px);
+  position: absolute;
+  top: 0;
+  right: 0px;
+  opacity: 0.5;
+}
+div.bnrWrap>div.banner>div.images>div.btn{
+  font-size: 15px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+
+}
+div.bnrWrap>div.banner>div.images>div.imgBig{
+  background-image: none;
+  animation-name: none;
+  width: 100%;
+  height: 180px;
+  float: left;
+}
+div.bnrWrap>div.banner>div.images>div.imgBig>div.imgSmall{
+  border-radius: 0%;
+  width: 100%;
+  height: 180px;
+}
+div.bnrWrap>div.banner>div.texts{
+  width: 50%;
+}
+div.bnrWrap>div.banner>div.texts>div.btn{
+  font-size: 80px;
+  text-align: left;
+}
+div.bnrWrap>div.banner>div.texts>h2{
+  font-size: 15px;
+}
+div.bnrWrap>div.banner>div.texts>h5{
+  font-size: 13px;
+}
+div.cntWrap{
+  margin-top: 100px;
+}
+div.cntWrap>div.content{
+  width: 90%;
+  max-width: 380px;
+}
+div.cntWrap>div.content>div.header>h2{
+  font-size: 15px;
+}
+div.cntWrap>div.content.cnt01>div.header>h2::before{
+  height: 5px;
+  width: 100%;
+}
+div.cntWrap>div.content.cnt02>div.header>h2::before{
+  height: 5px;
+  width: 100%;
+}
+div.cntWrap>div.content.cnt04>div.header>h2::before{
+  height: 5px;
+  width: 100%;
+}
+div.cntWrap>div.content.cnt02>div.header>h2{
+  width: 100%;
+}
+div.cntWrap>div.content.cnt02>div.header>h5{
+  display: none;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article{
+  width: calc(100% / 3 - 20px);
+  height: 100px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.image{
+  height: 100px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article:nth-child(6)~div.article{
+  display: none
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article:nth-child(3)~div.article{
+  margin-top: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
+  width: calc(100% / 4 * 3);
+  height: 40px;
+  overflow: hidden;
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3{
+  font-size: 12px;
+  width: calc(100% / 3 * 2);
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>div.btn{
+  width: calc(100% / 3 - 20px);
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>div.btn{
+  margin-left: 5px;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.article:hover>div.texts>h3{
+  text-decoration: underline;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article:hover::before{
+  display: none;
+}
+div.cntWrap>div.content.cnt04>div.section{
+  height: 250px;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView{
+  width: 100%;
+  overflow: hidden;
+}
+
+
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup{
+  width: 300%;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article{
+  width: calc(100% / 3 - 20px);
+  margin: 0 10px;
+ 
+}
+
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.texts::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.texts>h3{
+  width: calc(100% / 4 * 1.2);
+  float: left;
+  font-weight: 700;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.texts>h4{
+  width: calc(100% / 4 * 2.8);
+  float: left;
+  line-height: 40px;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.texts>h4>br{
+  display: none;
+}
+
+div.cntWrap>div.content.cnt04>div.section>div.btn{
+  width: 100%;
+}
+div.cntWrap>div.content.cnt04>div.section>div.btn>i{
+  width: 100%;
+}
+div.cntWrap>div.content.cnt04>div.section>div.btn>i:nth-child(1){
+  width: calc(100% / 4 * 0.3);
+}
+
+div.cntWrap>div.content.cnt04>div.section>div.btn>i:nth-child(2){
+  width: calc(100% / 4 * 0.3);
+  
+}
+
+
+div.ftrWrap{
+  margin-top: 100px;
+}
+div.ftrWrap>div.footer{
+  width: 90%;
+  max-width: 380px;
+  padding: 10px 0px;
+}
+div.ftrWrap>div.footer>h1{
+  font-size: 15px;
+  line-height: 40px;
+}
+div.ftrWrap>div.footer>p{
+  font-size: 10px;
+  line-height: 15px;
+  height: 30px;
+}
+div.ftrWrap>div.footer>div.sns{
+  line-height: 40px;
+  font-size: 12px;
+}
+div.ftrWrap>div.footer>div.sns>i{
+  line-height: 40px;
+  font-size: 15px;
+}

@@ -1,0 +1,912 @@
+.btn, .btns{
+  cursor: pointer;
+}
+@keyframes bigNSmall {
+  0%{
+    font-size: 25px;
+  }
+  50%{
+    font-size: 35px;
+  }
+  100%{
+    font-size: 25px;
+  }
+}
+
+
+
+body{
+  overflow-x: hidden;
+ 
+}
+
+
+/* 헤더 */
+div.hdrWrap{
+  background-color: #41734d;
+  color: #fff;
+}
+div.hdrWrap>div.header{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  line-height: 80px;
+}
+div.hdrWrap>div.header::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.hdrWrap>div.header>h1{
+  float: left;
+  width: calc(100% / 12);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+div.hdrWrap>div.header>ul.member{
+  float: left;
+  margin-left: 20px;
+}
+div.hdrWrap>div.header>ul.member>li{
+  float: left;
+  margin-left: 20px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+div.hdrWrap>div.header>div.search{
+  float: right;
+}
+div.hdrWrap>div.header>div.search>i{
+  font-size: 25px;
+  float: left;
+  line-height: 80px;
+}
+div.hdrWrap>div.header>div.search i.xi-bars{
+  display: none;
+}
+input#chk{
+  display: none;
+}
+input#chk:checked+div.navBoxWrap{
+  height: 40px;
+}
+
+/* 네비박스 */
+div.navBoxWrap{
+  background-color: #eee29b;
+  color: #41734d;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+div.navBoxWrap>div.navBox{
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+div.navBoxWrap>div.navBox::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.navBoxWrap>div.navBox>ul.nav{
+  float: right;
+}
+div.navBoxWrap>div.navBox>ul.nav>li{
+  float: left;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+/* 메인 */
+div.mainWrap>div.main{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+div.mainWrap>div.main::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 메인 왼쪽 */
+div.mainWrap>div.main>div.mainL{
+  width: calc(100% / 12 * 8);
+  float: left;
+  position: relative;
+  
+}
+div.mainWrap>div.main>div.mainL>div.mainView{
+  overflow: hidden;
+  width: calc((100vw - 1080px) / 2 + 100%);
+  max-width: calc((100vw - 80vw) / 2 + 100%)
+  min(calc((100vw - 700px) / -2),calc((100vw - 80vw) / -2));
+  margin-left: calc((100vw - 1080px) / -2);
+}
+div.mainWrap>div.main>div.mainL>div.mainView>div.images::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.mainWrap>div.main>div.mainL>div.mainView>div.images{
+  width: 300%;
+  transition: all 0.5s;
+}
+div.mainWrap>div.main>div.mainL>div.mainView>div.images>div.image{
+  width: calc(100% / 3);
+  float: left;
+  height: 520px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+div.mainWrap>div.main>div.mainL>div.mainView>div.images>div.image.i1{
+  background-image: url('../images/sport-shoes-1470061_1920.jpg');
+}
+div.mainWrap>div.main>div.mainL>div.mainView>div.images>div.image.i2{
+  background-image: url('../images/hands-g40e4bdfe9_1280.jpg');
+}
+div.mainWrap>div.main>div.mainL>div.mainView>div.images>div.image.i3{
+  background-image: url('../images/microphone-5340340_1920.jpg');
+}
+
+div.mainWrap>div.main>div.mainL>div.btn{
+  color: #ccc;
+  line-height: 40px;
+  margin-top: -40px;
+  font-size: 20px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  
+}
+div.mainWrap>div.main>div.mainL>div.btn>i{
+  margin-right: 10px;
+}
+/* 메인 중앙 */
+div.mainWrap>div.main>div.mainM{
+  width: calc(100% / 12 * 3);
+  float: left;
+  overflow: hidden;
+}
+div.mainWrap>div.main>div.mainM>div.mTop{
+  background-color: #eee29b;
+}
+div.mainWrap>div.main>div.mainM>div.mTop::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+div.mainWrap>div.main>div.mainM>div.mTop>div.imgView{
+  width: calc(100% / 3 * 1.8);
+  overflow: hidden;
+}
+div.mainWrap>div.main>div.mainM>div.mTop>div.imgView>div.images{
+  width: 300%;
+  transition: all 0.5s;
+}
+div.mainWrap>div.main>div.mainM>div.mTop>div.imgView>div.images>div.image{
+  height: 160px;
+  width: calc(100% / 3);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+div.mainWrap>div.main>div.mainM>div.mTop>div.imgView>div.images>div.image.i1{
+  background-image: url('../images/9.DreamsComeTrue_aespa.PNG');
+}
+div.mainWrap>div.main>div.mainM>div.mTop>div.imgView>div.images>div.image.i2{
+  background-image: url('../images/10.눈이\ 오잖아_이무진feat헤이즈.PNG');
+}
+div.mainWrap>div.main>div.mainM>div.mTop>div.imgView>div.images>div.image.i3{
+  background-image: url('../images/4.호랑수월가_탑현.PNG');
+}
+
+div.mainWrap>div.main>div.mainM>div.mTop>div.btn>i{
+  margin-right: 10px;
+}
+div.mainWrap>div.main>div.mainM>div.mMid{
+  text-align: center;
+  background-color: #85c031;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+div.mainWrap>div.main>div.mainM>div.mMid>p{
+  line-height: 20px;
+  font-size: 14px;
+  height: 40px;
+  margin: 0 auto;
+}
+div.mainWrap>div.main>div.mainM>div.mMid>h3{
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: 700;
+}
+div.mainWrap>div.main>div.mainM>div.mBtm{
+  width: 300%;
+  text-align: center;
+  transition: all 0.5s;
+  
+  
+}
+div.mainWrap>div.main>div.mainM>div.mBtm>div.texts{
+  width: calc(100% / 3);
+  float: left;
+  padding: 40px 0px;
+  color: #fff;
+}
+div.mainWrap>div.main>div.mainM>div.mBtm>div.texts:nth-child(1){
+  background-color: #3a66a2;
+}
+div.mainWrap>div.main>div.mainM>div.mBtm>div.texts:nth-child(2){
+  background-color: orange;
+}
+div.mainWrap>div.main>div.mainM>div.mBtm>div.texts:nth-child(3){
+  background-color: #ccc;
+}
+div.mainWrap>div.main>div.mainM>div.mBtm::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.mainWrap>div.main>div.mainM>div.mBtm h3{
+  font-size: 25px;
+  line-height: 70px;
+  font-weight: 700;
+}
+div.mainWrap>div.main>div.mainM>div.mBtm ul.tag{
+  line-height: 30px;
+  margin-top: 20px;
+  float: right;
+}
+div.mainWrap>div.main>div.mainM>div.mBtm ul.tag>li{
+  float: left;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+div.mainWrap>div.main>div.mainM>div.mBtm>div.btn>i{
+  margin-right: 10px;
+}
+/* 메인 오른쪽 */
+div.mainWrap>div.main>div.mainR{
+  width: calc(100% / 12 - 20px);
+  float: left;
+  margin-left: 20px;
+  margin-top: 360px;
+}
+div.mainWrap>div.main>div.mainR>ul.nav{
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+div.mainWrap>div.main>div.mainR>ul.nav>li:hover{
+  background-color: #41734d;
+}
+div.mainWrap>div.main>div.mainR>ul.nav>li:hover>a{
+  color: #fff;
+}
+div.mainWrap>div.main>div.mainR>ul.nav>li{
+  border-bottom: 2px solid #41734d;
+  color: #41734d;
+}
+
+
+/* 배너 */
+div.bnrWrap{
+  margin-top: 160px;
+}
+div.bnrWrap>div.banner{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+div.bnrWrap>div.banner::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 이미지 */
+div.bnrWrap>div.banner>div.images{
+  width: calc(50% - 20px);
+  float: left;
+}
+div.bnrWrap>div.banner>div.images>div.imgBig{
+  width: calc(100% / 6 * 5.5);
+  height: 480px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url('../images/vinyl_PNG63.png');
+  position: relative;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+}
+div.bnrWrap>div.banner>div.images>div.imgBig>div.imgSmall{
+  width: calc(100% / 5.5 * 3.5);
+  border-radius: 50%;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/1.취중고백_김민석\(멜로망스\).PNG');
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+div.bnrWrap>div.banner>div.images>div.btn{
+  font-size: 20px;
+  line-height: 40px;
+  text-align: right;
+}
+div.bnrWrap>div.banner>div.images>div.btn>i{
+  margin-right: 10px;
+}
+/* 텍스트 */
+div.bnrWrap>div.banner>div.texts{
+  width: calc(50% - 20px);
+  float: left;
+  text-align: right;
+}
+div.bnrWrap>div.banner>div.texts>div.btn{
+  font-size: 250px;
+  color: #41734d;
+  text-align: center;
+}
+
+div.bnrWrap>div.banner>div.texts>h2{
+  font-size: 30px;
+  line-height: 80px;
+  font-weight: 700;
+  margin-top: -40px;
+}
+div.bnrWrap>div.banner>div.texts>h5{
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #666;
+}
+
+/* 컨텐츠 공통 */
+div.cntWrap{
+  margin-top: 160px;
+}
+div.cntWrap>div.content{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+div.cntWrap>div.content>div.header>h2{
+  font-size: 25px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* 컨텐츠1 */
+
+div.cntWrap>div.content.cnt01>div.header>h2{
+  margin-left: 10px;
+}
+div.cntWrap>div.content.cnt01>div.header>h2::before{
+  content: '';
+  display: block;
+  width: calc(100% / 12 * 9);
+  height: 15px;
+  background-color: #41734d;
+}
+
+div.cntWrap>div.content.cnt01>div.section::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 좌 */
+div.cntWrap>div.content.cnt01>div.section>div.artLeft{
+  width: calc(100% / 12 * 7 - 20px);
+  float: left;
+  margin: 0 10px;
+}
+
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artTop>div.article>div.image{
+  width: calc(100% / 7 * 5);
+  height: 440px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/puzzle_미나\(MEENA\).PNG');
+  position: relative;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artTop>div.article>div.texts{
+  background-color: #eee29b;
+  padding: 160px 0px 190px calc(100% / 7 * 5.2);
+  margin-top: -360px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artTop>div.article>div.texts>h3{
+  font-size: 25px;
+  line-height: 40px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artTop>div.article>div.texts>h5{
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm{
+  margin-top: 40px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article{
+  width: calc(100% / 4 - 20px);
+  margin: 0 10px;
+  float: left;
+  margin-top: 20px;
+  height: 120px;
+  overflow: hidden;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article:nth-child(4)~div.article{
+  margin-top: 40px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article:hover>div.texts{
+  margin-top: -40px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.image.i1{
+  background-image: url('../images/1new.PNG');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.image.i2{
+  background-image: url('../images/2new.PNG');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.image.i3{
+  background-image: url('../images/3new.PNG');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.image.i4{
+  background-image: url('../images/4new.PNG');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.image.i5{
+  background-image: url('../images/5new.PNG');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.image.i6{
+  background-image: url('../images/6new.PNG');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.image.i7{
+  background-image: url('../images/7new.PNG');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.image.i8{
+  background-image: url('../images/8new.PNG');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artLeft>div.artBtm>div.article>div.texts{
+  width: 100%;
+  line-height: 40px;
+  height: 40px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+  opacity: 0.8;
+}
+
+/* 우 */
+div.cntWrap>div.content.cnt01>div.section>div.artRight{
+  width: calc(100% / 12 * 5 - 20px);
+  float: left;
+  margin: 0 10px;
+  margin-top: 80px;
+}
+
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.image.i1{
+  height: 200px;
+  background-image: url('../images/monkey-gb81789f02_1920.jpg');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.image.i2{
+  height: 280px;
+  background-image: url('../images/hands-g40e4bdfe9_1280.jpg');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.texts{
+  background-color: #ff924a;
+  padding: 40px 30px 60px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.texts>h3{
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: 700;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.texts>h5{
+  line-height: 40px;
+  font-size: 18px;
+  color: #444;
+  font-weight: 700;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.texts>div.btn{
+  width: 50%;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: #ffb137;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artRight>div.article>div.texts>div.btn:hover{
+  outline: 2px solid white;
+}
+
+/* 컨텐츠2 */
+
+div.cntWrap>div.content.cnt02>div.header::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.cntWrap>div.content.cnt02>div.header>h2{
+  float: left;
+  width: calc(100% / 12 * 4);
+}
+div.cntWrap>div.content.cnt02>div.header>h2::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15px;
+  background-color: #41734d;
+}
+div.cntWrap>div.content.cnt02>div.header>h5{
+  float: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+
+div.cntWrap>div.content.cnt02>div.section>div.article:hover::before{
+  width: 100vw;
+  height: 40px;
+  background-color: rgb(228, 228, 228);
+  content: '';
+  display: block;
+  margin-left: calc((100vw - 1080px) / -2);
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+  z-index: -1;
+} 
+div.cntWrap>div.content.cnt02>div.section>div.article{
+  margin-top: 20px;
+  position: relative;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image{
+  width: calc(100% / 12);
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40px;
+  margin-left: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i1::before{
+  content: '01';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i1{
+  width: 40px;
+  background-image: url('../images/1.취중고백_김민석\(멜로망스\).PNG');
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i2::before{
+  content: '02';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i2{
+  width: 40px;
+  background-image: url('../images/2.사랑은\ 늘\ 도망가_임영웅.PNG');
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i3::before{
+  content: '03';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i3{
+  width: 40px;
+  background-image: url('../images/3.Step\ Back_GOT\ the\ beat.PNG');
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i4::before{
+  content: '04';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i4{
+  width: 40px;
+  background-image: url('../images/4.호랑수월가_탑현.PNG');
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i5::before{
+  content: '05';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image.i5{
+  width: 40px;
+  background-image: url('../images/5.회전목마_sokodomo.PNG');
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
+  float: left;
+  width: calc(100% / 12 * 11 -  20px);
+  line-height: 40px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3{
+  float: left;
+  width: calc(100% / 11 * 8);
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>div.btn{
+  float: right;
+  width: calc(100% / 11 * 3);
+  text-align: right;
+  font-size: 25px;
+}
+
+
+
+/* 컨텐츠3 */
+
+div.cntWrap>div.content.cnt03>div.header>h2::before{
+  content: '';
+  display: block;
+  width: calc(100% / 12 * 3);
+  height: 15px;
+  background-color: #41734d;
+}
+
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image{
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/나무썸넬.PNG');
+}
+div.cntWrap>div.content.cnt03>div.section>div.article>div.btn{
+  margin-top: -400px;
+  line-height: 400px;
+  text-align: center;
+  font-size: 150px;
+  color: #417344;
+  opacity: 0.5;
+}
+
+div.cntWrap>div.content.cnt03>div.section>div.article>div.texts{
+  margin-top: -140px;
+  padding: 40px 10px 20px;
+  width: calc(100% / 12 * 3);
+  background-color: #41734d;
+  color: #fff;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article>div.texts>h3{
+  line-height: 20px;
+  font-size: 16px;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article>div.texts>h4{
+  line-height: 20px;
+  font-size: 14px;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article>div.texts>h4:nth-child(2){
+  margin-top: 20px;
+}
+
+/* 컨텐츠4 */
+div.cntWrap:nth-last-child(2){
+  margin-top: 80px;
+}
+
+
+div.cntWrap>div.content.cnt04>div.section{
+  position: relative;
+  height: 330px;
+}
+
+div.cntWrap>div.content.cnt04>div.section>div.btn{
+  width: 100%;
+  line-height: 40px;
+  height: 60px;
+  font-size: 20px;
+  position: absolute;
+  top: 100px;
+  z-index: 5;
+  color: #ccc;
+
+}
+div.cntWrap>div.content.cnt04>div.section>div.btn::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.cntWrap>div.content.cnt04>div.section>div.btn>i:nth-child(1){
+  width: calc(100% / 12* 0.5);
+  text-align: center;
+  float: left;
+  background-color: #41734d;
+  opacity: 0.5;
+  line-height: 60px;
+  margin-left: 10px;
+  
+}
+div.cntWrap>div.content.cnt04>div.section>div.btn>i:nth-child(2){
+  text-align: center;
+  width: calc(100% / 12 * 0.5);
+  float: right;
+  line-height: 60px;
+  background-color: #41734d;
+  opacity: 0.5;
+  margin-right: 10px;
+  
+}
+
+div.cntWrap>div.content.cnt04>div.section>div.artView{
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  top: 20px;
+  overflow: hidden;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup{
+  width: 200%;
+  transition: all 0.5s;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article{
+  width: calc(50% / 3 - 20px);
+  float: left;
+  margin: 0 10px;
+}
+
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.image{
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.image.i1{
+  background-image: url('../images/takemybreath_thumb.jpg');
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.image.i2{
+  background-image: url('../images/butterthumb.jpg');
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.image.i3{
+  background-image: url('../images/staythumb.jpg');
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.image.i4{
+  background-image: url('../images/beo.jpg');
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.image.i5{
+  background-image: url('../images/abcdefu.jpg');
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.image.i6{
+  background-image: url('../images/hi.jpg');
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.texts{
+  text-transform: capitalize;
+  padding: 20px 0px;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.texts>h3{
+  font-size: 20px;
+  line-height: 40px;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.texts>h4{
+  line-height: 20px;
+  font-size: 16px;
+}
+div.cntWrap>div.content.cnt04>div.section>div.artView>div.artGroup>div.article>div.texts>h4:nth-child(2){
+  margin-top: 10px;
+}
+
+/* 푸터 */
+div.ftrWrap{
+  margin-top: 160px;
+  background-color: #41734d;
+  color: #fff;
+} 
+div.ftrWrap>div.footer{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0px;
+} 
+div.ftrWrap>div.footer>h1{
+  line-height: 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+} 
+div.ftrWrap>div.footer>p{
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 20px;
+  height: 40px;
+  width: calc(100% / 12 * 4);
+  overflow: hidden;
+} 
+div.ftrWrap>div.footer>div.sns{
+  line-height: 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+} 
+div.ftrWrap>div.footer>div.sns>i{
+  line-height: 40px;
+  font-size: 25px;
+} 
+
+.xi-heart{
+  animation-name : bigNSmall;
+  color : red;
+  animation-duration : 0.5s;
+  animation-timing-function : linear;
+}

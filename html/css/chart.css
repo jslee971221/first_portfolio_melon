@@ -1,0 +1,621 @@
+.btn, .btns{
+  cursor: pointer;
+}
+@keyframes bigNSmall {
+  0%{
+    font-size: 25px;
+  }
+  50%{
+    font-size: 35px;
+  }
+  100%{
+    font-size: 25px;
+  }
+}
+
+body{
+  position: relative;
+}
+/* 헤더 */
+div.hdrWrap{
+  background-color: #41734d;
+  color: #fff;
+}
+div.hdrWrap>div.header{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  line-height: 80px;
+}
+div.hdrWrap>div.header::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.hdrWrap>div.header>div.hdrLeft{
+  width: calc(100% / 12 * 3);
+  float: left;
+}
+div.hdrWrap>div.header>div.hdrLeft>h1{
+  float: left;
+  width: calc(100% / 3);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+div.hdrWrap>div.header>div.hdrLeft>ul.member{
+  float: left;
+  margin-left: 20px;
+}
+div.hdrWrap>div.header>div.hdrLeft>ul.member>li{
+  float: left;
+  margin-left: 20px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+div.hdrWrap>div.header>div.hdrRight{
+  width: calc(100% / 12 * 4);
+  float: right;
+}
+div.hdrWrap>div.header>div.hdrRight>ul.nav{
+  width: calc(100% / 4 * 3);
+  float: left;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+div.hdrWrap>div.header>div.hdrRight>ul.nav>li{
+  float: left;
+  text-decoration: underline;
+  margin-left: 20px;
+
+}
+div.hdrWrap>div.header>div.hdrRight>div.search{
+  width: calc(100% / 4);
+  float: right
+}
+div.hdrWrap>div.header>div.hdrRight>div.search>i{
+  font-size: 25px;
+}
+div.hdrWrap>div.header>div.hdrRight>div.search i.xi-bars{
+  display: none;
+}
+
+input#chk{
+  display: none;
+}
+input#chk:checked+div.navBoxWrap{
+  height: 40px;
+}
+
+/* 네비박스 */
+div.navBoxWrap{
+  background-color: #eee29b;
+  color: #41734d;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+div.navBoxWrap>div.navBox{
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+div.navBoxWrap>div.navBox::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.navBoxWrap>div.navBox>ul.nav{
+  float: right;
+}
+div.navBoxWrap>div.navBox>ul.nav>li{
+  float: left;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+
+
+
+
+
+/* 플레이어 */
+div.playerWrap::before{
+  width: 100%;
+  height: 120px;
+  content: '';
+  display: block;
+  background-color: #ccc;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+div.playerWrap{
+  position: fixed;
+  width: calc(80% / 12 * 4);
+  max-width: calc(1080px / 12 * 4);
+  right: calc((100vw - 1080px) / 2 - 8px);
+  top: 380px;
+  z-index: 3;
+}
+div.playerWrap>div.player{
+  padding: 20px 10px;  
+}
+div.playerWrap>div.player::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.playerWrap>div.player>div.btn{
+  float: right;
+  font-size: 20px;
+}
+div.playerWrap>div.player>div.image{
+  width: calc(100% / 4);
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/1.취중고백_김민석\(멜로망스\).PNG');
+  float: left;
+}
+div.playerWrap>div.player>div.texts{
+  float: left;
+  width: calc(100% / 4 * 2.5);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+div.playerWrap>div.player>div.texts>h3{
+  font-size: 15px;
+  font-weight: 700;
+}
+div.playerWrap>div.player>div.texts>div.btns{
+  text-align: center;
+  font-size: 30px;
+}
+
+/* 배너 */
+div.bnrWrap{
+  margin-top: 120px;
+}
+div.bnrWrap>div.banner{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+div.bnrWrap>div.banner::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.bnrWrap>div.banner>div.image{
+  width: calc(100% / 12 * 3 - 20px);
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/1.취중고백_김민석\(멜로망스\).PNG');
+  float: left;
+  margin-left: calc(100% / 12);
+}
+div.bnrWrap>div.banner>div.btns{
+  float: right;
+}
+div.bnrWrap>div.banner>div.btns>i{
+  background-color: #41734d;
+  color: #fff;
+  line-height: 40px;
+  font-size: 17px;
+  width: 40px;
+  text-align: center;
+  margin-left: 20px;
+}
+div.bnrWrap>div.banner>div.texts{
+  float: left;
+  padding-top: 80px;
+  margin-left: 20px;
+}
+div.bnrWrap>div.banner>div.texts>h2{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+}
+div.bnrWrap>div.banner>div.texts>h5{
+  line-height: 20px;
+  font-size: 17px;
+  color: rgb(142, 142, 142);
+
+}
+div.bnrWrap>div.banner>div.texts>div.btn{
+  font-size: 100px;
+  color: #41734d;
+  margin-left: -30px;
+}
+
+/* 컨텐츠 */
+div.cntWrap{
+  margin-top: 140px;
+}
+div.cntWrap>div.content{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+div.cntWrap>div.content>div.header>h2::before{
+  width: calc(100% / 12 * 3.5);
+  height: 15px;
+  content: '';
+  display: block;
+  background-color: #41734d;
+}
+div.cntWrap>div.content>div.header>h2{
+  line-height: 80px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+div.cntWrap>div.content>div.section::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 왼 */
+div.cntWrap>div.content>div.section>div.artLeft{
+  width: calc(100% / 12 * 6.5 - 20px);
+  float: left;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article{
+  margin-left: 25px;
+  margin-top: 20px;
+  position: relative;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article:hover::before{
+  width: calc(100% + 40px);
+  margin-left: -40px;
+  height: 40px;
+  background-color: rgb(228, 228, 228);
+  opacity: 0.3;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image{
+  width: calc(100% / 6.5 * 0.5);
+  float: left;
+  background-color: #ccc;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i1::before{
+  content: '01';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i1{
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/1.취중고백_김민석\(멜로망스\).PNG');
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i2::before{
+  content: '02';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i2{
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/2.사랑은\ 늘\ 도망가_임영웅.PNG');
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i3::before{
+  content: '03';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i3{
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/3.Step\ Back_GOT\ the\ beat.PNG');
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i4::before{
+  content: '04';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i4{
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/4.호랑수월가_탑현.PNG');
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i5::before{
+  content: '05';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i5{
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/5.회전목마_sokodomo.PNG');
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i6::before{
+  content: '06';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i6{
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/6.ELEVEN_IVE\(아이브\).PNG');
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i7::before{
+  content: '07';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i7{
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/7.리무진_비오.PNG');
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i8::before{
+  content: '08';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i8{
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/8.countingStar_비오.PNG');
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i9::before{
+  content: '09';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i9{
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/9.DreamsComeTrue_aespa.PNG');
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i10::before{
+  content: '10';
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-left: -25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.image.i10{
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/10.눈이\ 오잖아_이무진feat헤이즈.PNG');
+}
+
+
+
+
+
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.texts{
+  width: calc(100% / 6.5 * 6);
+  line-height: 40px;
+  float: right;
+  padding-left: 20px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.texts>h3{
+  float: left;
+  width: calc(100% / 6 * 4);
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 16px;
+  font-weight: 700;
+
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.article>div.texts>div.btn{
+  float: right;
+  width: calc(100% / 6 * 2);
+  text-align: right;
+  font-size: 25px;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.btn{
+  line-height: 80px;
+  color: #fff;
+  background-color: #41744d;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 5px solid #284f31;
+}
+div.cntWrap>div.content>div.section>div.artLeft>div.btn:hover{
+  border: 5px solid #ccc;
+}
+/* 오 */
+div.cntWrap>div.content>div.section>div.artRight{
+  width: calc(100% / 12 * 5.5);
+  float: right;
+  margin-top: -60px;
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article{
+  margin-left: 20px;
+  margin-top: -40px;
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.art1>div.image{
+  width: 100%;
+  height: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/music-6363734_1920.jpg');
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article>div.texts{
+  margin-top: 20px;
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.art1>div.texts>h3{
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre{
+  width: calc(100% / 3 - 20px);
+  float: left;
+  height: 140px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre:hover::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 140px;
+  background-color: #333;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre:hover>div.texts{
+  margin-top: -140px;
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.image{
+  height: 140px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.image.i1{
+  background-image: url('../images/kpop.jpg');
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.image.i2{
+  background-image: url('../images/pop.jpg');
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.image.i3{
+  background-image: url('../images/dance.jpg');
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.image.i4{
+  background-image: url('../images/hiphop.jpg');
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.image.i5{
+  background-image: url('../images/rock.jpg');
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.image.i6{
+  background-image: url('../images/jazz.jpg');
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.image.i7{
+  background-image: url('../images/classic.jpg');
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.image.i8{
+  background-image: url('../images/rnb.png');
+}
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.image.i9{
+  background-image: url('../images/folk.jpg');
+}
+
+
+
+
+
+div.cntWrap>div.content>div.section>div.artRight>div.article.genre>div.texts{
+  height: 140px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+  padding-top: 50px;
+}
+
+/* 푸터 */
+div.ftrWrap{
+  margin-top: 160px;
+  background-color: #41734d;
+  color: #fff;
+} 
+div.ftrWrap>div.footer{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0px;
+} 
+div.ftrWrap>div.footer>h1{
+  line-height: 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+} 
+div.ftrWrap>div.footer>p{
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 20px;
+  height: 40px;
+  width: calc(100% / 12 * 4);
+  overflow: hidden;
+} 
+div.ftrWrap>div.footer>div.sns{
+  line-height: 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+} 
+div.ftrWrap>div.footer>div.sns>i{
+  line-height: 40px;
+  font-size: 25px;
+} 
+.xi-heart{
+  animation-name : bigNSmall;
+  color : red;
+  animation-duration : 0.5s;
+  animation-timing-function : linear;
+}

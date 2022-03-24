@@ -1,0 +1,54 @@
+div.hdrWrap>div.header{
+  width: 90%;
+  max-width: 700px;
+}
+div.hdrWrap>div.header>div.hdrLeft{
+  width: calc(100% / 8 * 3);
+}
+div.hdrWrap>div.header>div.hdrLeft>h1{
+  width: calc(100% / 3);
+}
+div.hdrWrap>div.header>div.hdrRight>ul.nav{
+  display: none;
+}
+div.hdrWrap>div.header>div.hdrRight{
+  width: calc(100% / 8 * 3);
+}
+
+div.hdrWrap>div.header>div.hdrRight>div.search{
+  width: 100%;
+  text-align: right;
+  width: 75px;
+}
+div.hdrWrap>div.header>div.hdrRight>div.search>i{
+  line-height: 80px;
+}
+div.hdrWrap>div.header>div.hdrRight>div.search i.xi-bars{
+  width: 25px;
+  display: block;
+  font-size: 25px;
+  line-height: 80px;
+  float: right;
+  margin-left: 25px;
+}
+
+div.cntWrap{
+  margin-top: 120px;
+}
+div.cntWrap>div.content{
+  width: 90%;
+  max-width: 700;
+}
+div.cntWrap>div.content.cnt02>div.section>div.onPlay{
+  width: 100%;
+}
+div.cntWrap>div.content.cnt02>div.section>div.onPlay>div.image{
+  height: 500px;
+}
+div.ftrWrap{
+  margin-top: 120px;
+}
+div.ftrWrap>div.footer{
+  width: 90%;
+  max-width: 700;
+}

@@ -1,0 +1,201 @@
+div.hdrWrap>div.header{
+  width: 90%;
+  max-width: 380px;
+  line-height: 40px;
+}
+div.hdrWrap>div.header>div.hdrLeft{
+  width: 50%;
+}
+div.hdrWrap>div.header>div.hdrLeft>h1{
+  width: calc(100% / 2 - 20px);
+  font-size: 25px;
+}
+div.hdrWrap>div.header>div.hdrLeft>ul.member>li{
+  font-size: 12px;
+  margin-left: 10px;
+}
+div.hdrWrap>div.header>div.hdrRight{
+  width: 50%;
+}
+div.hdrWrap>div.header>div.hdrRight>div.search{
+  width: 50px;
+}
+div.hdrWrap>div.header>div.hdrRight>div.search>label{
+  margin-left: 0px;
+}
+div.hdrWrap>div.header>div.hdrRight>div.search>i{
+  font-size: 18px;
+  line-height: 40px;
+}
+div.hdrWrap>div.header>div.hdrRight>div.search i.xi-bars{
+  font-size: 18px;
+  line-height: 40px;
+  width: 18px;
+  margin-left: 10px;
+}
+div.cntWrap{
+  margin-top: 20px;
+}
+div.cntWrap>div.content{
+  width: 90%;
+  max-width: 380px;
+  line-height: 40px;
+}
+div.cntWrap>div.content::after{
+  display: none;
+}
+div.cntWrap>div.content>div.section{
+  box-shadow: none;
+  height: 600px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1{
+  margin-top: 20px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artLeft{
+  overflow: hidden;
+  top: 140px;
+  z-index: 6;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.article>div.texts{
+  width: 50%;
+  bottom: 20px;
+  height: 120px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.article>div.texts>h3{
+  font-size: 15px;
+  line-height: 20px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.article>div.texts>h5{
+  font-size: 12px;
+  line-height: 20px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.article>div.texts>p{
+  font-size: 10px;
+  line-height: 13px;
+  margin-top: 20px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artLeft>div.artL{
+  width: 100%;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artLeft div.article>div.texts{
+  margin-top: 40px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artLeft div.article>div.texts>h3{
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 700;
+
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artLeft>div.artL>div.article:nth-child(1)>div.texts>h3::before{
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 700;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artLeft>div.artL>div.article:nth-child(2)>div.texts>h3::before{
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 700;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artLeft>div.artL>div.article:nth-child(3)>div.texts>h3::before{
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 700;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artLeft>div.artL>div.article:nth-child(4)>div.texts>h3::before{
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 700;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artLeft div.article>div.texts>div.btn{
+  display: none;
+}
+
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artLeft>div.artR{
+  display: none;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.article>div.images{
+  z-index: 7;
+  width: calc(50% - 20px);
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.article>div.texts{
+  z-index: 7;
+}
+
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight{
+  background-color: #fff;
+  height: 200px;
+}
+
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.btns>div{
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 20px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.btns>div.left{
+  right: 40px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.article{
+  height: 200px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.article>div.images>div.imgBig{
+  height: 200px;
+  background-image: none;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g1>div.artRight>div.article>div.images>div.imgBig>div.imgSmall{
+  height: 180px;
+  width: 100%;
+  border-radius: 0%;
+  margin: 0px;
+}
+
+div.cntWrap>div.content>div.section>div.artGroup.g2{
+  margin-top: 300px;
+  height: 160px;
+  margin-bottom: 0px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g2>div.article.artBig{
+  height: 100px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g2>div.article>div.image{
+  height: 100px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g2>div.article.artBig>div.image{
+  height: 100px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g2>div.article>div.texts{
+  font-size: 10px;
+}
+div.cntWrap>div.content>div.section>div.artGroup.g2>div.article.artBig>div.image::before{
+  width: calc(100% + 40px);
+}
+div.cntWrap>div.content>div.section>div.artGroup.g2>div.btns{
+  font-size: 12px;
+  bottom: 120px;
+}
+
+div.ftrWrap{
+  margin-top: 0px;
+}
+div.ftrWrap>div.footer{
+  width: 90%;
+  max-width: 380px;
+  padding: 10px 0px;
+}
+div.ftrWrap>div.footer>h1{
+  font-size: 15px;
+  line-height: 40px;
+}
+div.ftrWrap>div.footer>p{
+  font-size: 10px;
+  line-height: 15px;
+  height: 30px;
+}
+div.ftrWrap>div.footer>div.sns{
+  line-height: 40px;
+  font-size: 12px;
+}
+div.ftrWrap>div.footer>div.sns>i{
+  line-height: 40px;
+  font-size: 15px;
+}
