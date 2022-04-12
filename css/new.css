@@ -13,6 +13,9 @@ i{
 .btn, .btns{
   cursor: pointer;
 }
+.image{
+  font-size:0; line-height:0; text-shadow:none; color:transparent;
+}
 /* 헤더 */
 div.hdrWrap{
   background-color: #41734d;

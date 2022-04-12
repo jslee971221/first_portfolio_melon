@@ -19,7 +19,9 @@ body{
   overflow-x: hidden;
  
 }
-
+.image{
+  font-size:0; line-height:0; text-shadow:none; color:transparent;
+}
 
 /* 헤더 */
 div.hdrWrap{
