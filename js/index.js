@@ -3,6 +3,7 @@ $(function(){
     var iMain = 0;
     var ibnr = 0;
     var iCnt04 = 0;
+    var wd = $(window).width();
     var limit = function(i, list){ //목록의 개수와 인덱스를 비교하여 슬라이드가 더 넘어가지 않도록 함.
       if(i >= list.length){ 
         return list.length - 1;
@@ -43,19 +44,39 @@ $(function(){
     });  
     //좋아요 클릭 끝
     //컨텐츠4 슬라이드
-    $('.cnt04 .xi-angle-right').click(function(){
-      iCnt04++;
-      if(iCnt04 >= 3){
-        iCnt04 = 3;
-      }
-      $('.cnt04 .artGroup').css('marginLeft', -33.33 * iCnt04 + '%');
-    });
-    $('.cnt04 .xi-angle-left').click(function(){
-      iCnt04--;
-      if(iCnt04 <= 0){
-        iCnt04 = 0;
-      }
-      $('.cnt04 .artGroup').css('marginLeft', -33.33 * iCnt04 + '%');
-    });
+    
+    if(wd <= 420){
+      $('.cnt04 .xi-angle-right').click(function(){
+        iCnt04++;
+        if(iCnt04 >= 5){
+          iCnt04 = 5;
+        }
+        $('.cnt04 .artGroup').css('marginLeft', -100 * iCnt04 + '%');
+      });
+      $('.cnt04 .xi-angle-left').click(function(){
+        iCnt04--;
+        if(iCnt04 <= 0){
+          iCnt04 = 0;
+        }
+        $('.cnt04 .artGroup').css('marginLeft', -100 * iCnt04 + '%');
+      });
+    }else{
+      $('.cnt04 .xi-angle-right').click(function(){
+        iCnt04++;
+        if(iCnt04 >= 3){
+          iCnt04 = 3;
+        }
+        $('.cnt04 .artGroup').css('marginLeft', -33.33 * iCnt04 + '%');
+      });
+      $('.cnt04 .xi-angle-left').click(function(){
+        iCnt04--;
+        if(iCnt04 <= 0){
+          iCnt04 = 0;
+        }
+        $('.cnt04 .artGroup').css('marginLeft', -33.33 * iCnt04 + '%');
+      });
+    }
+    
     //
   });
+
